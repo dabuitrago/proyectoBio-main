@@ -65,31 +65,39 @@ article {
 
 article p {
     max-width: 55%;
+    padding: 1em;
+    text-align: justify;
+
 }
 
 article.right .img-container {
-    order: 2;
-    margin-right: 0;
-    margin-left: 20px;
+    order: 3;
+    margin-right: 20px;
+    margin-left: auto;
 }
 
 article.right p {
     order: 1;
-    text-align: left;
+    padding: 1em;
+    text-align: justify;
 }
 
 article.left .img-container {
     order: 1;
-    margin-right: 20px;
+ /*   padding: 1em; */
+    margin-right: auto;
 }
 
 article.left p {
     order: 2;
+    padding: 1em;
+    text-align: justify;
 }
 
 .img-container {
-    position: relative;
-    max-width: 45%;
+    position: sticky;
+    max-width: 50%;
+    
 }
 
 .img-container img {
@@ -99,14 +107,14 @@ article.left p {
 }
 
 .img-container h2 {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     margin: 0;
     background-color: var(--base-color);
     color: var(--dark-green);
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
     border-radius: 0 0 8px 8px;
 }
 
@@ -123,4 +131,28 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+/*===============================
+*/
+
+.caja
+{
+    display: flex;
+    flex-wrap: nowrap; /*Esta propiedad se añade por defecto a una caja flex así que está de más especificarla*/
+    align-items: center;
+}
+
+.texto
+{
+    width: 300px;
+    margin-left: 10px;
+}
+
+.imagenes_flora 
+{ 
+    width: 500px; 
+    height: 300px; 
 }
